@@ -12,7 +12,9 @@ const App = () => {
 
   return (
    <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{
+      headerShown: false
+    }} >
       <Stack.Screen name="Artist" component={Artist} />
       <Stack.Screen name="MyCart" component={MyCart} />
       <Stack.Screen name="ProductInfo" component={ProductInfo} />

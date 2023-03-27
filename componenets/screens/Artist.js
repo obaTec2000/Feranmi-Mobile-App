@@ -153,7 +153,7 @@ const Home = ({navigation}) => {
             </View>
           )
         ) : null}
-        <Text>&#8377; {data.productPrice}</Text>
+        <Text>₦ {data.productPrice}</Text>
       </TouchableOpacity>
     );
   };
@@ -251,6 +251,7 @@ const Home = ({navigation}) => {
                 }}>
                 Painting
               </Text>
+              
               <Text
                 style={{
                   fontSize: 14,
@@ -259,16 +260,28 @@ const Home = ({navigation}) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                41
+                3
+              </Text>
+              <Text
+                style={{
+                  fontSize: 18,
+                  color: COLOURS.black,
+                  fontWeight: '500',
+                  marginLeft:100,
+                  letterSpacing: 1,
+                }}>
+                SCULPTURE
               </Text>
             </View>
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.black,
                 fontWeight: '400',
+                opacity: 0.5,
+                marginRight: 100,
               }}>
-              SeeAll
+              3
             </Text>
           </View>
           <View

@@ -297,7 +297,7 @@ const ProductInfo = ({route, navigation}) => {
                   }}
                 />
               </View>
-              <Text> Rustaveli Ave 57,{'\n'}17-001, Batume</Text>
+              <Text>Abeokuta, Ogun State</Text>
             </View>
             <Entypo
               name="chevron-right"
@@ -319,10 +319,10 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.black,
                 marginBottom: 4,
               }}>
-              &#8377; {product.productPrice}.00
+              ₦ {product.productPrice}.00
             </Text>
             <Text>
-              Tax Rate 2%~ &#8377;{product.productPrice / 20} (&#8377;
+              Tax Rate 2%~ ₦{product.productPrice / 20} (₦
               {product.productPrice + product.productPrice / 20})
             </Text>
           </View>
