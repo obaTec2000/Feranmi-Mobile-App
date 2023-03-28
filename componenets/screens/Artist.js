@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -7,12 +7,12 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import {COLOURS, Items} from '../database/Database';
+import { COLOURS, Items } from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   const [products, setProducts] = useState([]);
   const [accessory, setAccessory] = useState([]);
 
@@ -44,10 +44,10 @@ const Home = ({navigation}) => {
 
   //create an product reusable card
 
-  const ProductCard = ({data}) => {
+  const ProductCard = ({ data }) => {
     return (
       <TouchableOpacity
-        onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
+        onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
         style={{
           width: '48%',
           marginVertical: 14,
@@ -213,7 +213,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-           WELCOME TO FERANMI ARTWORK GALLERY
+            WELCOME TO FERANMI ARTWORK GALLERY
           </Text>
           <Text
             style={{
@@ -223,24 +223,24 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               lineHeight: 24,
             }}>
-           Sorround Yourself with art
+            Sorround Yourself with art
             {'\n'}you'll love
           </Text>
         </View>
-      
-          <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
-            <MaterialCommunityIcons
-              name="cart"
-              style={{
-                fontSize: 20,
-                color: COLOURS.backgroundMedium,
-                padding: 12,
-                borderRadius: 10,
-                borderWidth: 1,
-                borderColor: COLOURS.backgroundLight,
-              }}
-            />
-          </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
+          <MaterialCommunityIcons
+            name="cart"
+            style={{
+              fontSize: 20,
+              color: COLOURS.backgroundMedium,
+              padding: 12,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: COLOURS.backgroundLight,
+            }}
+          />
+        </TouchableOpacity>
         <View
           style={{
             padding: 16,
@@ -265,7 +265,7 @@ const Home = ({navigation}) => {
                 }}>
                 PAINTING
               </Text>
-              
+
               <Text
                 style={{
                   fontSize: 14,
@@ -276,18 +276,9 @@ const Home = ({navigation}) => {
                 }}>
                 3
               </Text>
-              <Text
-                style={{
-                  fontSize: 18,
-                  color: COLOURS.black,
-                  fontWeight: '500',
-                  marginLeft:80,
-                  letterSpacing: 1,
-                }}>
-                SCULPTURE
-              </Text>
+              {/*  */}
             </View>
-            <Text
+            {/* <Text
               style={{
                 fontSize: 14,
                 color: COLOURS.black,
@@ -296,7 +287,7 @@ const Home = ({navigation}) => {
                 marginRight: 50,
               }}>
               3
-            </Text>
+            </Text> */}
           </View>
           <View
             style={{
@@ -332,7 +323,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-               TEXTILE
+                SCULPTURE
               </Text>
               <Text
                 style={{
@@ -345,27 +336,7 @@ const Home = ({navigation}) => {
                 3
               </Text>
             </View>
-            <Text
-                style={{
-                  fontSize: 18,
-                  color: COLOURS.black,
-                  fontWeight: '500',
-                  marginLeft:90,
-                  letterSpacing: 1,
-                }}>
-                PHOTOGRAPY
-              </Text>
-              <Text
-                style={{
-                  fontSize: 14,
-                  color: COLOURS.black,
-                  fontWeight: '400',
-                  opacity: 0.5,
-                  marginRight:70,
-                  
-                }}>
-                3
-              </Text>
+
 
           </View>
           <View
