@@ -25,6 +25,9 @@ export const COLOURS = {
         require('../database/images/painting/painting3.jpg'),
         require('../database/images/painting/painting8.jpg'),
         require('../database/images/painting/painting1.png'),
+        require('../database/images/painting/painting4.jpg'),
+        require('../database/images/painting/painting5.jpg'),
+        require('../database/images/painting/painting2.jpg'),
       ],
     },
     {
@@ -35,12 +38,15 @@ export const COLOURS = {
       description:
         'boAt Rockerz 450 M is an on-ear wireless headset that has been ergonomically designed to meet the needs of music lovers.',
       isOff: false,
-      productImage: require('../database/images/painting/painting3.jpg'),
+      productImage: require('../database/images/sculpture/sculpture8.jpg'),
       isAvailable: true,
       productImageList: [
-        require('../database/images/painting/painting4.jpg'),
-        require('../database/images/painting/painting5.jpg'),
-        require('../database/images/painting/painting2.jpg'),
+        require('../database/images/sculpture/sculpture3.jpg'),
+        require('../database/images/sculpture/sculpture7.jpg'),
+        require('../database/images/sculpture/sculpture.png'),
+        require('../database/images/sculpture/sculpture2.jpg'),
+        require('../database/images/sculpture/sculpture4.jpg'),
+        require('../database/images/sculpture/sculpture5.jpg'),
       ],
     },
     {
@@ -52,12 +58,14 @@ export const COLOURS = {
         'Bluetooth: It has Bluetooth v5.0 with a range of 10m and is compatible with Android & iOS',
       isOff: true,
       offPercentage: 18,
-      productImage: require('../database/images/sculpture/sculpture8.jpg'),
+      productImage: require('../database/images/textile/textile7.jpeg'),
       isAvailable: true,
       productImageList: [
-        require('../database/images/sculpture/sculpture3.jpg'),
-        require('../database/images/sculpture/sculpture7.jpg'),
-        require('../database/images/sculpture/sculpture.png'),
+        require('../database/images/textile/textile1.jpg'),
+        require('../database/images/textile/textile2.jpg'),
+        require('../database/images/textile/textile3.jpg'),
+        require('../database/images/textile/textile4.jpg'),
+        require('../database/images/textile/textile5.jpg'),
       ],
     },
     {
@@ -68,12 +76,14 @@ export const COLOURS = {
       description:
         'Fly into your workouts with precise tones that inspire and energize your system with its HD sound, all the time.',
       isOff: false,
-      productImage: require('../database/images/sculpture/sculpture1.jpg'),
+      productImage: require('../database/images/photography/photo1.jpg'),
       isAvailable: true,
       productImageList: [
-        require('../database/images/sculpture/sculpture2.jpg'),
-        require('../database/images/sculpture/sculpture4.jpg'),
-        require('../database/images/sculpture/sculpture5.jpg'),
+        require('../database/images/photography/photo2.jpg'),
+        require('../database/images/photography/photo3.jpg'),
+        require('../database/images/photography/photo4.jpg'),
+        require('../database/images/photography/photo5.jpg'),
+        require('../database/images/photography/photo6.jpg'),
       ],
     },
     
@@ -85,12 +95,14 @@ export const COLOURS = {
       description:
         'The unbeatable boAt signature sound shines through no matter what are you playing courtesy its 10mm drivers.',
       isOff: false,
-      productImage: require('../database/images/painting/painting8.jpg'),
+      productImage: require('../database/images/digital/dig1.jpg'),
       isAvailable: false,
       productImageList: [
-        require('../database/images/painting/painting8.jpg'),
-        require('../database/images/painting/painting8.jpg'),
-        require('../database/images/painting/painting8.jpg'),
+        require('../database/images/digital/dig2.jpg'),
+        require('../database/images/digital/dig3.jpg'),
+        require('../database/images/digital/dig4.jpg'),
+        require('../database/images/digital/dig5.jpg'),
+        require('../database/images/digital/dig6.png'),
       ],
     },
     {
@@ -101,12 +113,14 @@ export const COLOURS = {
       description:
         'One Touch Control & Voice Assistant: With one multifunction button, you can play/pause, previous/next track and answer/hang-up calls.Voice assistant function lets you access siri/Google Assistant',
       isOff: false,
-      productImage: require('../database/images/painting/painting8.jpg'),
+      productImage: require('../database/images/drawing/draw1.jpg'),
       isAvailable: true,
       productImageList: [
-        require('../database/images/painting/painting8.jpg'),
-        require('../database/images/painting/painting8.jpg'),
-        require('../database/images/painting/painting8.jpg'),
+        require('../database/images/drawing/draw2.jpg'),
+        require('../database/images/drawing/draw3.jpg'),
+        require('../database/images/drawing/draw4.jpg'),
+        require('../database/images/drawing/draw5.jpg'),
+        require('../database/images/drawing/draw6.jpg'),
       ],
     },
   ];

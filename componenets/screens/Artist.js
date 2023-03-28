@@ -174,7 +174,7 @@ const Home = ({navigation}) => {
             justifyContent: 'space-between',
             padding: 16,
           }}>
-          <TouchableOpacity>
+          {/* <TouchableOpacity>
             <Entypo
               name="shopping-bag"
               style={{
@@ -185,12 +185,12 @@ const Home = ({navigation}) => {
                 backgroundColor: COLOURS.backgroundLight,
               }}
             />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
+          </TouchableOpacity> */}
+          {/* <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
             <MaterialCommunityIcons
               name="cart"
               style={{
-                fontSize: 18,
+                fontSize: 13,
                 color: COLOURS.backgroundMedium,
                 padding: 12,
                 borderRadius: 10,
@@ -198,7 +198,7 @@ const Home = ({navigation}) => {
                 borderColor: COLOURS.backgroundLight,
               }}
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
         <View
           style={{
@@ -213,7 +213,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-           WELCOME TO FERANMI ART GALLERY
+           WELCOME TO FERANMI ARTWORK GALLERY
           </Text>
           <Text
             style={{
@@ -227,6 +227,20 @@ const Home = ({navigation}) => {
             {'\n'}you'll love
           </Text>
         </View>
+      
+          <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
+            <MaterialCommunityIcons
+              name="cart"
+              style={{
+                fontSize: 20,
+                color: COLOURS.backgroundMedium,
+                padding: 12,
+                borderRadius: 10,
+                borderWidth: 1,
+                borderColor: COLOURS.backgroundLight,
+              }}
+            />
+          </TouchableOpacity>
         <View
           style={{
             padding: 16,
@@ -249,7 +263,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Painting
+                PAINTING
               </Text>
               
               <Text
@@ -267,7 +281,7 @@ const Home = ({navigation}) => {
                   fontSize: 18,
                   color: COLOURS.black,
                   fontWeight: '500',
-                  marginLeft:100,
+                  marginLeft:80,
                   letterSpacing: 1,
                 }}>
                 SCULPTURE
@@ -279,7 +293,7 @@ const Home = ({navigation}) => {
                 color: COLOURS.black,
                 fontWeight: '400',
                 opacity: 0.5,
-                marginRight: 100,
+                marginRight: 50,
               }}>
               3
             </Text>
@@ -318,7 +332,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Sculpture
+               TEXTILE
               </Text>
               <Text
                 style={{
@@ -328,17 +342,31 @@ const Home = ({navigation}) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                78
+                3
               </Text>
             </View>
             <Text
-              style={{
-                fontSize: 14,
-                color: COLOURS.blue,
-                fontWeight: '400',
-              }}>
-              SeeAll
-            </Text>
+                style={{
+                  fontSize: 18,
+                  color: COLOURS.black,
+                  fontWeight: '500',
+                  marginLeft:90,
+                  letterSpacing: 1,
+                }}>
+                PHOTOGRAPY
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  color: COLOURS.black,
+                  fontWeight: '400',
+                  opacity: 0.5,
+                  marginRight:70,
+                  
+                }}>
+                3
+              </Text>
+
           </View>
           <View
             style={{
