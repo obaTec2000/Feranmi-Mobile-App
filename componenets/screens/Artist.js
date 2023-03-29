@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { COLOURS, Items } from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const Home = ({ navigation }) => {
@@ -137,7 +138,7 @@ const Home = ({ navigation }) => {
           }}>
           {data.productName}
         </Text>
-        {data.category == 'art-work' ? (
+        {data.category == 'product' ? (
           data.isAvailable ? (
             <View
               style={{
@@ -159,6 +160,7 @@ const Home = ({ navigation }) => {
                 }}>
                 Available
               </Text>
+              
             </View>
           ) : (
             <View
@@ -179,7 +181,7 @@ const Home = ({ navigation }) => {
                   fontSize: 12,
                   color: COLOURS.red,
                 }}>
-                Available
+                unavailable
               </Text>
             </View>
           )
@@ -205,15 +207,16 @@ const Home = ({ navigation }) => {
             justifyContent: 'space-between',
             padding: 16,
           }}>
-          <TouchableOpacity>
-            <Entypo
-              name="shopping-bag"
+          <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
+            <MaterialCommunityIcons
+              name="cart"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,
                 padding: 12,
                 borderRadius: 10,
-                backgroundColor: COLOURS.backgroundLight,
+                borderWidth: 1,
+                borderColor: COLOURS.backgroundLight,
               }}
             />
           </TouchableOpacity>

@@ -36,6 +36,7 @@ export const Items = [
     description:
     'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
+   
     productImage: require('../database/images/painting/painting8.jpg'),
     isAvailable: true,
     productImageList: [
@@ -107,9 +108,10 @@ export const Items = [
     productPrice: '4,000',
     description:
     'Textile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
-    isOff: false,
-    productImage: require('../database/images/textile/textile2.jpg'),
-    isAvailable: false,
+    isOff: true,
+    offPercentage: 20,
+    productImage: require('../database/images/textile/textile3.jpg'),
+    isAvailable: true,
     productImageList: [
       require('../database/images/textile/textile3.jpg'),
       require('../database/images/textile/textile4.jpg'),
@@ -125,7 +127,7 @@ export const Items = [
     'Texttile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/textile/textile1.jpg'),
-    isAvailable: true,
+    isAvailable: false,
     productImageList: [
 
       require('../database/images/textile/textile2.jpg'),
@@ -141,9 +143,10 @@ export const Items = [
     productPrice: '5,000',
     description:
     'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
-    isOff: false,
+    isOff: true,
+    offPercentage: 25,
     productImage: require('../database/images/photography/photo1.jpg'),
-    isAvailable: false,
+    isAvailable: true,
     productImageList: [
 
       require('../database/images/photography/photo2.jpg'),
@@ -175,9 +178,11 @@ export const Items = [
     productName: 'ArtWork Digitals',
     productPrice: '6,000',
     description:
-    'Printing workshop with printing tool and color for screen printing.',    isOff: false,
+    'Printing workshop with printing tool and color for screen printing.',    
+    isOff: true,
     productImage: require('../database/images/digital/dig1.jpg'),
-    isAvailable: false,
+    isAvailable: true,
+    offPercentage: 30,
     productImageList: [
       require('../database/images/digital/dig2.jpg'),
       require('../database/images/digital/dig3.jpg'),
@@ -193,7 +198,8 @@ export const Items = [
     productName: 'ArtWork Digital',
     productPrice: '6,000',
     description:
-      'Printing workshop with printing tool and color for screen printing.', isOff: false,
+      'Printing workshop with printing tool and color for screen printing.', 
+      isOff: false,
     productImage: require('../database/images/digital/dig5.jpg'),
     isAvailable: false,
     productImageList: [
@@ -207,9 +213,11 @@ export const Items = [
     productName: 'ArtWork Drawing',
     productPrice: '7,000',
     description:
-      'Printing workshop with printing tool and color for screen printing.', isOff: false,
+      'Printing workshop with printing tool and color for screen printing.', 
+      isOff: true,
     productImage: require('../database/images/drawing/draw2.jpg'),
-    isAvailable: false,
+    isAvailable: true,
+    offPercentage: 35,
     productImageList: [
       require('../database/images/drawing/draw4.jpg'),
       require('../database/images/drawing/draw5.jpg'),
@@ -241,9 +249,10 @@ export const Items = [
     productPrice: '8,000',
     description:
     'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
-    isOff: false,
+    isOff: true,
+    offPercentage: 40,
     productImage: require('../database/images/paper/w1.jpeg'),
-    isAvailable: false,
+    isAvailable: true,
     productImageList: [
       require('../database/images/paper/w2.jpg'),
       require('../database/images/paper/w3.jpg'),
@@ -278,9 +287,10 @@ export const Items = [
     productPrice: '9,000',
     description:
       'Printing workshop with printing tool and color for screen printing.',
-    isOff: false,
+    isOff: true,
     productImage: require('../database/images/print/pr5.jpg'),
-    isAvailable: false,
+    isAvailable: true,
+    offPercentage: 45,
     productImageList: [
       require('../database/images/print/pr4.jpg'),
       require('../database/images/print/pr2.jpg'),
