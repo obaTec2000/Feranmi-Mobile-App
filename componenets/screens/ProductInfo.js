@@ -217,7 +217,7 @@ const ProductInfo = ({route, navigation}) => {
                 fontSize: 12,
                 color: COLOURS.black,
               }}>
-              Shopping
+              Acquire This Artwork
             </Text>
           </View>
           <View
@@ -356,7 +356,7 @@ const ProductInfo = ({route, navigation}) => {
               color: COLOURS.white,
               textTransform: 'uppercase',
             }}>
-            {product.isAvailable ? 'Add to cart' : 'Not Avialable'}
+            {product.isAvailable ? 'Make an Offer' : 'Not Avialable'}
           </Text>
         </TouchableOpacity>
       </View>

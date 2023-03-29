@@ -106,7 +106,7 @@ const Home = ({ navigation }) => {
           }}>
           {data.productName}
         </Text>
-        {data.category == 'accessory' ? (
+        {data.category == 'art-work' ? (
           data.isAvailable ? (
             <View
               style={{
@@ -148,7 +148,7 @@ const Home = ({ navigation }) => {
                   fontSize: 12,
                   color: COLOURS.red,
                 }}>
-                Unavailable
+                Available
               </Text>
             </View>
           )
@@ -256,7 +256,7 @@ const Home = ({ navigation }) => {
                 flexDirection: 'row',
                 alignItems: 'center',
               }}>
-              <Text
+            <Text
                 style={{
                   fontSize: 18,
                   color: COLOURS.black,
@@ -265,7 +265,6 @@ const Home = ({ navigation }) => {
                 }}>
                 PAINTING
               </Text>
-
               <Text
                 style={{
                   fontSize: 14,
@@ -274,21 +273,20 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                3
+                18
               </Text>
-              {/*  */}
             </View>
-            {/* <Text
+            <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.black,
+                color: COLOURS.blue,
                 fontWeight: '400',
-                opacity: 0.5,
-                marginRight: 50,
               }}>
-              3
-            </Text> */}
+              SeeAll
+            </Text>
           </View>
+              
+          
           <View
             style={{
               flexDirection: 'row',
@@ -333,7 +331,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                3
+                10
               </Text>
             </View>
 
