@@ -58,14 +58,14 @@ export const Items = [
   },
   {
     id: 3,
-    category: 'accessory',
+    category: 'sculpture',
     productName: 'ArtWork Sculpture',
     productPrice: '3,000',
     description:
     'Sculpture techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 18,
-    productImage: require('../database/images/sculpture/s9.jpg'),
+    productImage: require('../database/images/sculpture/s1.jpg'),
     isAvailable: true,
     productImageList: [
 
@@ -77,7 +77,7 @@ export const Items = [
   },
   {
     id: 4,
-    category: 'accessory',
+    category: 'sculpture',
     productName: 'ArtWork Sculpture',
     productPrice: '3,000',
     description:
@@ -102,7 +102,7 @@ export const Items = [
 
   {
     id: 5,
-    category: 'accessory',
+    category: 'textile',
     productName: 'ArtWork Textile',
     productPrice: '4,000',
     description:
@@ -118,7 +118,7 @@ export const Items = [
   },
   {
     id: 6,
-    category: 'accessory',
+    category: 'textile',
     productName: 'ArtWork Textile',
     productPrice: '4,000',
     description:
@@ -136,7 +136,7 @@ export const Items = [
   },
   {
     id: 7,
-    category: 'accessory',
+    category: 'photography',
     productName: 'ArtWork Photography',
     productPrice: '5,000',
     description:
@@ -155,7 +155,7 @@ export const Items = [
   },
   {
     id: 8,
-    category: 'accessory',
+    category: 'photography',
     productName: 'ArtWork Photography',
     productPrice: '5,000',
     description:
@@ -171,7 +171,7 @@ export const Items = [
   },
   {
     id: 9,
-    category: 'accessory',
+    category: 'digital',
     productName: 'ArtWork Digitals',
     productPrice: '6,000',
     description:
@@ -189,7 +189,7 @@ export const Items = [
   },
   {
     id: 10,
-    category: 'accessory',
+    category: 'digital',
     productName: 'ArtWork Digital',
     productPrice: '6,000',
     description:
@@ -203,7 +203,7 @@ export const Items = [
   },
   {
     id: 11,
-    category: 'accessory',
+    category: 'drawing',
     productName: 'ArtWork Drawing',
     productPrice: '7,000',
     description:
@@ -218,7 +218,7 @@ export const Items = [
   },
   {
     id: 12,
-    category: 'accessory',
+    category: 'drawing',
     productName: 'ArtWork Drawing',
     productPrice: '7,000',
     description:
@@ -236,7 +236,7 @@ export const Items = [
   },
   {
     id: 13,
-    category: 'accessory',
+    category: 'paper',
     productName: 'ArtWork Work On Paper',
     productPrice: '8,000',
     description:
@@ -253,7 +253,7 @@ export const Items = [
   },
   {
     id: 14,
-    category: 'accessory',
+    category: 'paper',
     productName: 'Work On Paper',
     productPrice: '8000',
     description:
@@ -273,7 +273,7 @@ export const Items = [
   },
   {
     id: 15,
-    category: 'accessory',
+    category: 'print',
     productName: 'Print',
     productPrice: '9,000',
     description:
@@ -289,7 +289,7 @@ export const Items = [
   },
   {
     id: 16,
-    category: 'accessory',
+    category: 'print',
     productName: 'Print',
     productPrice: '10,000',
     description:
