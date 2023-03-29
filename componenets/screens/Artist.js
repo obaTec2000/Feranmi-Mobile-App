@@ -174,7 +174,7 @@ const Home = ({ navigation }) => {
             justifyContent: 'space-between',
             padding: 16,
           }}>
-          {/* <TouchableOpacity>
+          <TouchableOpacity>
             <Entypo
               name="shopping-bag"
               style={{
@@ -185,20 +185,8 @@ const Home = ({ navigation }) => {
                 backgroundColor: COLOURS.backgroundLight,
               }}
             />
-          </TouchableOpacity> */}
-          {/* <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
-            <MaterialCommunityIcons
-              name="cart"
-              style={{
-                fontSize: 13,
-                color: COLOURS.backgroundMedium,
-                padding: 12,
-                borderRadius: 10,
-                borderWidth: 1,
-                borderColor: COLOURS.backgroundLight,
-              }}
-            />
-          </TouchableOpacity> */}
+          </TouchableOpacity>
+         
         </View>
         <View
           style={{
@@ -228,19 +216,7 @@ const Home = ({ navigation }) => {
           </Text>
         </View>
 
-        <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
-          <MaterialCommunityIcons
-            name="cart"
-            style={{
-              fontSize: 20,
-              color: COLOURS.backgroundMedium,
-              padding: 12,
-              borderRadius: 10,
-              borderWidth: 1,
-              borderColor: COLOURS.backgroundLight,
-            }}
-          />
-        </TouchableOpacity>
+        
         <View
           style={{
             padding: 16,
@@ -314,14 +290,14 @@ const Home = ({ navigation }) => {
                 flexDirection: 'row',
                 alignItems: 'center',
               }}>
-              <Text
+            <Text
                 style={{
                   fontSize: 18,
                   color: COLOURS.black,
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                SCULPTURE
+                PAINTING
               </Text>
               <Text
                 style={{
@@ -331,11 +307,17 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                10
+                18
               </Text>
             </View>
-
-
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLOURS.blue,
+                fontWeight: '400',
+              }}>
+              SeeAll
+            </Text>
           </View>
           <View
             style={{

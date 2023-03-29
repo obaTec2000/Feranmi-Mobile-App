@@ -13,10 +13,10 @@ export const Items = [
   {
     id: 1,
     category: 'product',
-    productName: 'Spring Rhaspsody, Wowjteck Babski, Poland, 2020',
-    productPrice: '1,230',
+    productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
+    productPrice: '2,000',
     description:
-      'Acrylic. Abstract painting on canvas. Big fomat for large, modern interiors. Vivid colors. Complex and deep background texture. Daring, thick strokes of paint. Many interpenetrating layers to achieve the desired effect. Varnished. Ready to hang. Framing not required. Signature on fornt and back side.',
+      'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 10,
     productImage: require('../database/images/painting/painting6.jpg'),
@@ -31,16 +31,14 @@ export const Items = [
   {
     id: 2,
     category: 'product',
-    productName: 'Wojtec Babski',
-    productPrice: '1,499',
+    productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
+    productPrice: '2,000',
     description:
-      'Woman face. Semi-abstract. Daring, thick strokes of paint. Many interpenetrating layers to achieve the desired effect. Vivid colours. For brave, modern interiors. Ready to hang. Framing not required. Varnished. Signed on front and back side. An unique certificate of authenticity is attached to each painting. Size 140 x 140 cm.',
+    'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/painting/painting8.jpg'),
     isAvailable: true,
     productImageList: [
-
-
 
       require('../database/images/painting/p10.jpg'),
       require('../database/images/painting/painting4.jpg'),
@@ -61,16 +59,16 @@ export const Items = [
   {
     id: 3,
     category: 'accessory',
-    productName: 'Ancient Roman Sculpture – Immortality through Statues',
-    productPrice: '1,999',
+    productName: 'ArtWork Sculpture',
+    productPrice: '3,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Sculpture techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 18,
     productImage: require('../database/images/sculpture/s9.jpg'),
     isAvailable: true,
     productImageList: [
-     
+
       require('../database/images/sculpture/sculpture3.jpg'),
       require('../database/images/sculpture/sculpture7.jpg'),
       require('../database/images/sculpture/s2.jpg'),
@@ -80,8 +78,8 @@ export const Items = [
   {
     id: 4,
     category: 'accessory',
-    productName: 'Ancient Roman Sculpture – Immortality through Statues',
-    productPrice: '399',
+    productName: 'ArtWork Sculpture',
+    productPrice: '3,000',
     description:
       'Hands of sculptor and hammer detail while carving.',
 
@@ -89,7 +87,7 @@ export const Items = [
     productImage: require('../database/images/sculpture/s6.jpg'),
     isAvailable: true,
     productImageList: [
-      
+
       require('../database/images/sculpture/sculpture2.jpg'),
       require('../database/images/sculpture/s1.jpg'),
       require('../database/images/sculpture/s3.jpg'),
@@ -105,10 +103,10 @@ export const Items = [
   {
     id: 5,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Textile',
+    productPrice: '4,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Textile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/textile/textile2.jpg'),
     isAvailable: false,
@@ -121,19 +119,15 @@ export const Items = [
   {
     id: 6,
     category: 'accessory',
-    productName: 'Boult Audio AirBass Propods TWS',
-    productPrice: '1,299',
+    productName: 'ArtWork Textile',
+    productPrice: '4,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Texttile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/textile/textile1.jpg'),
     isAvailable: true,
     productImageList: [
-      // require('../database/images/drawing/draw2.jpg'),
-      // require('../database/images/drawing/draw3.jpg'),
-      // require('../database/images/drawing/draw4.jpg'),
-      // require('../database/images/drawing/draw5.jpg'),
-      // require('../database/images/drawing/draw6.jpg'),
+
       require('../database/images/textile/textile2.jpg'),
       require('../database/images/textile/textile3.jpg'),
       require('../database/images/textile/textile4.jpg'),
@@ -143,15 +137,15 @@ export const Items = [
   {
     id: 7,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Photography',
+    productPrice: '5,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/photography/photo1.jpg'),
     isAvailable: false,
     productImageList: [
-     
+
       require('../database/images/photography/photo2.jpg'),
       require('../database/images/photography/photo3.jpg'),
       require('../database/images/photography/photo4.jpg'),
@@ -162,15 +156,15 @@ export const Items = [
   {
     id: 8,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Photography',
+    productPrice: '5,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/photography/photo5.jpg'),
     isAvailable: false,
     productImageList: [
-     
+
       require('../database/images/photography/photo5.jpg'),
       require('../database/images/photography/photo6.jpg'),
     ],
@@ -178,12 +172,11 @@ export const Items = [
   {
     id: 9,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Digitals',
+    productPrice: '6,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
-    isOff: false,
-    productImage:  require('../database/images/digital/dig1.jpg'),
+    'Printing workshop with printing tool and color for screen printing.',    isOff: false,
+    productImage: require('../database/images/digital/dig1.jpg'),
     isAvailable: false,
     productImageList: [
       require('../database/images/digital/dig2.jpg'),
@@ -191,18 +184,17 @@ export const Items = [
       require('../database/images/digital/dig4.jpg'),
       require('../database/images/digital/dig5.jpg'),
       require('../database/images/digital/dig6.png'),
-      
+
     ],
   },
   {
     id: 10,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Digital',
+    productPrice: '6,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
-    isOff: false,
-    productImage:  require('../database/images/digital/dig5.jpg'),
+      'Printing workshop with printing tool and color for screen printing.', isOff: false,
+    productImage: require('../database/images/digital/dig5.jpg'),
     isAvailable: false,
     productImageList: [
       require('../database/images/digital/dig5.jpg'),
@@ -212,12 +204,11 @@ export const Items = [
   {
     id: 11,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Drawing',
+    productPrice: '7,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
-    isOff: false,
-    productImage:  require('../database/images/drawing/draw2.jpg'),
+      'Printing workshop with printing tool and color for screen printing.', isOff: false,
+    productImage: require('../database/images/drawing/draw2.jpg'),
     isAvailable: false,
     productImageList: [
       require('../database/images/drawing/draw4.jpg'),
@@ -228,15 +219,15 @@ export const Items = [
   {
     id: 12,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'ArtWork Drawing',
+    productPrice: '7,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Drawing ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.', 
     isOff: false,
     productImage: require('../database/images/drawing/draw4.jpg'),
     isAvailable: false,
     productImageList: [
-     require('../database/images/drawing/draw2.jpg'),
+      require('../database/images/drawing/draw2.jpg'),
       require('../database/images/drawing/draw3.jpg'),
       require('../database/images/drawing/draw4.jpg'),
       require('../database/images/drawing/draw5.jpg'),
@@ -246,10 +237,10 @@ export const Items = [
   {
     id: 13,
     category: 'accessory',
-    productName: 'Work On Paper',
-    productPrice: '1,499',
+    productName: 'ArtWork Work On Paper',
+    productPrice: '8,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+    'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/paper/w1.jpeg'),
     isAvailable: false,
@@ -257,18 +248,18 @@ export const Items = [
       require('../database/images/paper/w2.jpg'),
       require('../database/images/paper/w3.jpg'),
       require('../database/images/paper/w4.jpg'),
-      
+
     ],
   },
   {
     id: 14,
     category: 'accessory',
     productName: 'Work On Paper',
-    productPrice: '1,499',
+    productPrice: '8000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
-    isOff: false,
-    productImage: require('../database/images/drawing/draw4.jpg'),
+    'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+     isOff: false,
+    productImage: require('../database/images/paper/w5.jpg'),
     isAvailable: false,
     productImageList: [
       require('../database/images/paper/w6.jpg'),
@@ -283,37 +274,39 @@ export const Items = [
   {
     id: 15,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'Print',
+    productPrice: '9,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+      'Printing workshop with printing tool and color for screen printing.',
     isOff: false,
-    productImage: require('../database/images/drawing/draw4.jpg'),
+    productImage: require('../database/images/print/pr5.jpg'),
     isAvailable: false,
     productImageList: [
-     require('../database/images/drawing/draw2.jpg'),
-      require('../database/images/drawing/draw3.jpg'),
-      require('../database/images/drawing/draw4.jpg'),
-      require('../database/images/drawing/draw5.jpg'),
-      require('../database/images/drawing/draw6.jpg'),
+      require('../database/images/print/pr4.jpg'),
+      require('../database/images/print/pr2.jpg'),
+      require('../database/images/print/pr3.jpg'),
     ],
   },
   {
     id: 16,
     category: 'accessory',
-    productName: 'boAt Rockerz 255 Pro+',
-    productPrice: '1,499',
+    productName: 'Print',
+    productPrice: '10,000',
     description:
-      'Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.',
+      'Printing workshop with printing tool and color for screen printing.',
     isOff: false,
-    productImage: require('../database/images/drawing/draw4.jpg'),
+    productImage: require('../database/images/print/pr7.jpg'),
     isAvailable: false,
     productImageList: [
-     require('../database/images/drawing/draw2.jpg'),
-      require('../database/images/drawing/draw3.jpg'),
-      require('../database/images/drawing/draw4.jpg'),
-      require('../database/images/drawing/draw5.jpg'),
-      require('../database/images/drawing/draw6.jpg'),
+      require('../database/images/print/pr6.jpg'),
+      require('../database/images/print/pr7.jpg'),
+      require('../database/images/print/pr8.jpg'),
+      require('../database/images/print/pr9.jpg'),
+      require('../database/images/print/pr10.jpg'),
+      require('../database/images/print/pr11.jpg'),
+      require('../database/images/print/pr12.jpg'),
+      require('../database/images/print/pr13.jpg'),
+      require('../database/images/print/pr14.jpg'),
     ],
   },
 ];
