@@ -11,6 +11,18 @@ import { COLOURS, Items } from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { useNavigation } from '@react-navigation/native';
+
+const NavigationButton = ({ text, destination }) => {
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate(destination);
+  };
+}
+
+
+
 
 const Home = ({ navigation }) => {
   const [products, setProducts] = useState([]);
@@ -20,6 +32,7 @@ const Home = ({ navigation }) => {
   const [drawing, setDrawing] = useState([]);
   const [photography, setPhotography] = useState([]);
   const [print, setPrint] = useState([]);
+  const [paper, setPaper] = useState([]);
 
   //get called on screen loads
   useEffect(() => {
@@ -40,6 +53,7 @@ const Home = ({ navigation }) => {
     let digitalList = [];
     let printList = [];
     let drawingList = [];
+    let paperList = [];
 
     for (let index = 0; index < Items.length; index++) {
       if (Items[index].category == 'product') {
@@ -62,6 +76,9 @@ const Home = ({ navigation }) => {
       else if (Items[index].category == 'print') {
         printList.push(Items[index]);
       }
+      else if (Items[index].category == 'paper') {
+        paperList.push(Items[index]);
+      }
     }
 
     setProducts(productList);
@@ -71,14 +88,130 @@ const Home = ({ navigation }) => {
     setDrawing(drawingList);
     setPhotography(photographyList);
     setPrint(printList);
+    setPaper(paperList);
   };
 
   //create an product reusable card
 
-  const ProductCard = ({ data }) => {
+  // const ProductCard = ({ data }) => {
+  //   return (
+  //     <TouchableOpacity
+  //       onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
+  //       style={{
+  //         width: '48%',
+  //         marginVertical: 14,
+  //       }}>
+  //       <View
+  //         style={{
+  //           width: '100%',
+  //           height: 100,
+  //           borderRadius: 10,
+  //           backgroundColor: COLOURS.backgroundLight,
+  //           position: 'relative',
+  //           justifyContent: 'center',
+  //           alignItems: 'center',
+  //           marginBottom: 8,
+  //         }}>
+  //         {data.isOff ? (
+  //           <View
+  //             style={{
+  //               position: 'absolute',
+  //               width: '15%',
+  //               height: '19%',
+  //               backgroundColor: COLOURS.green,
+  //               top: 0,
+  //               left: 0,
+  //               borderTopLeftRadius: 10,
+  //               borderBottomRightRadius: 10,
+  //               alignItems: 'center',
+  //               justifyContent: 'center',
+  //             }}>
+  //             <Text
+  //               style={{
+  //                 fontSize: 8,
+  //                 color: COLOURS.white,
+  //                 fontWeight: 'bold',
+  //                 letterSpacing: 1,
+  //               }}>
+  //               {data.offPercentage}%
+  //             </Text>
+  //           </View>
+  //         ) : null}
+  //         <Image
+  //           source={data.productImage}
+  //           style={{
+  //             width: '500%',
+  //             height: '70%',
+              
+  //             resizeMode: 'contain',
+  //           }}
+  //         />
+  //       </View>
+  //       <Text
+  //         style={{
+  //           fontSize: 12,
+  //           color: COLOURS.black,
+  //           fontWeight: '600',
+  //           marginBottom: 2,
+  //         }}>
+  //         {data.productName}
+  //       </Text>
+  //       {data.category == 'product' ? (
+  //         data.isAvailable ? (
+  //           <View
+  //             style={{
+  //               flexDirection: 'row',
+  //               alignItems: 'center',
+  //             }}>
+  //             <FontAwesome
+  //               name="circle"
+  //               style={{
+  //                 fontSize: 12,
+  //                 marginRight: 6,
+  //                 color: COLOURS.green,
+  //               }}
+  //             />
+  //             <Text
+  //               style={{
+  //                 fontSize: 12,
+  //                 color: COLOURS.green,
+  //               }}>
+  //               Available
+  //             </Text>
+              
+  //           </View>
+  //         ) : (
+  //           <View
+  //             style={{
+  //               flexDirection: 'row',
+  //               alignItems: 'center',
+  //             }}>
+  //             <FontAwesome
+  //               name="circle"
+  //               style={{
+  //                 fontSize: 12,
+  //                 marginRight: 6,
+  //                 color: COLOURS.red,
+  //               }}
+  //             />
+  //             <Text
+  //               style={{
+  //                 fontSize: 12,
+  //                 color: COLOURS.red,
+  //               }}>
+  //               unavailable
+  //             </Text>
+  //           </View>
+  //         )
+  //       ) : null}
+  //       <Text>₦ {data.productPrice}</Text>
+  //     </TouchableOpacity>
+  //   );
+  // };
+  const ProductCard = ({data}) => {
     return (
       <TouchableOpacity
-        onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
+        onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
         style={{
           width: '48%',
           marginVertical: 14,
@@ -98,19 +231,19 @@ const Home = ({ navigation }) => {
             <View
               style={{
                 position: 'absolute',
-                width: '20%',
-                height: '24%',
+                width: '11%',
+                height: '15%',
                 backgroundColor: COLOURS.green,
                 top: 0,
                 left: 0,
-                borderTopLeftRadius: 10,
-                borderBottomRightRadius: 10,
+                borderTopLeftRadius: 5,
+                borderBottomRightRadius: 5,
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
               <Text
                 style={{
-                  fontSize: 12,
+                  fontSize: 7,
                   color: COLOURS.white,
                   fontWeight: 'bold',
                   letterSpacing: 1,
@@ -122,9 +255,8 @@ const Home = ({ navigation }) => {
           <Image
             source={data.productImage}
             style={{
-              width: '500%',
-              height: '70%',
-              
+              width: '80%',
+              height: '80%',
               resizeMode: 'contain',
             }}
           />
@@ -138,7 +270,7 @@ const Home = ({ navigation }) => {
           }}>
           {data.productName}
         </Text>
-        {data.category == 'product' ? (
+        {data.category == 'productInfp ' ? (
           data.isAvailable ? (
             <View
               style={{
@@ -160,7 +292,6 @@ const Home = ({ navigation }) => {
                 }}>
                 Available
               </Text>
-              
             </View>
           ) : (
             <View
@@ -181,7 +312,7 @@ const Home = ({ navigation }) => {
                   fontSize: 12,
                   color: COLOURS.red,
                 }}>
-                unavailable
+                Unavailable
               </Text>
             </View>
           )
@@ -641,9 +772,64 @@ const Home = ({ navigation }) => {
             })}
           </View>
         </View>
-
+        <View
+          style={{
+            padding: 16,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                  color: COLOURS.black,
+                  fontWeight: '500',
+                  letterSpacing: 1,
+                }}>
+                WORK ON PAPER
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  color: COLOURS.black,
+                  fontWeight: '400',
+                  opacity: 0.5,
+                  marginLeft: 10,
+                }}>
+                18
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLOURS.blue,
+                fontWeight: '400',
+              }}>
+              SeeAll
+            </Text>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              justifyContent: 'space-around',
+            }}>
+            {paper.map(data => {
+              return <ProductCard data={data} key={data.id} />;
+            })}
+          </View>
+        </View>
 
       </ScrollView>
+      
     </View>
   );
 };

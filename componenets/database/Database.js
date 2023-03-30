@@ -19,11 +19,11 @@ export const Items = [
       'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 10,
-    productImage: require('../database/images/painting/painting6.jpg'),
+    productImage: require('../database/images/painting/painting1.png'),
     isAvailable: true,
     productImageList: [
       require('../database/images/painting/painting3.jpg'),
-      require('../database/images/painting/painting1.png'),
+      require('../database/images/painting/painting6.jpg'),
       require('../database/images/painting/p3.jpg'),
 
     ],
@@ -34,9 +34,9 @@ export const Items = [
     productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
     productPrice: '2,000',
     description:
-    'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
-   
+
     productImage: require('../database/images/painting/painting8.jpg'),
     isAvailable: true,
     productImageList: [
@@ -57,25 +57,30 @@ export const Items = [
       require('../database/images/painting/p8.jpg'),
     ],
   },
+
+   /* ----------------------------------------------- Sculpture DataGet ------------------------------*/
+
   {
     id: 3,
     category: 'sculpture',
     productName: 'ArtWork Sculpture',
     productPrice: '3,000',
     description:
-    'Sculpture techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Sculpture techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 18,
-    productImage: require('../database/images/sculpture/s1.jpg'),
+    productImage: require('../database/images/sculpture/s2.jpg'),
+
     isAvailable: true,
     productImageList: [
 
       require('../database/images/sculpture/sculpture3.jpg'),
       require('../database/images/sculpture/sculpture7.jpg'),
-      require('../database/images/sculpture/s2.jpg'),
+      require('../database/images/sculpture/s1.jpg'),
 
     ],
   },
+
   {
     id: 4,
     category: 'sculpture',
@@ -101,13 +106,14 @@ export const Items = [
     ],
   },
 
+   /* ----------------------------------------------- Textile DataGet ------------------------------*/
   {
     id: 5,
     category: 'textile',
     productName: 'ArtWork Textile',
     productPrice: '4,000',
     description:
-    'Textile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Textile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 20,
     productImage: require('../database/images/textile/textile3.jpg'),
@@ -118,31 +124,34 @@ export const Items = [
       require('../database/images/textile/textile5.jpg'),
     ],
   },
+
   {
     id: 6,
     category: 'textile',
     productName: 'ArtWork Textile',
     productPrice: '4,000',
     description:
-    'Texttile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Texttile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/textile/textile1.jpg'),
     isAvailable: false,
     productImageList: [
-
       require('../database/images/textile/textile2.jpg'),
       require('../database/images/textile/textile3.jpg'),
       require('../database/images/textile/textile4.jpg'),
       require('../database/images/textile/textile5.jpg'),
     ],
   },
+
+   /* ----------------------------------------------- Photography DataGet ------------------------------*/
+
   {
     id: 7,
     category: 'photography',
     productName: 'ArtWork Photography',
     productPrice: '5,000',
     description:
-    'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 25,
     productImage: require('../database/images/photography/photo1.jpg'),
@@ -156,66 +165,74 @@ export const Items = [
       require('../database/images/photography/photo6.jpg'),
     ],
   },
+
   {
     id: 8,
     category: 'photography',
     productName: 'ArtWork Photography',
     productPrice: '5,000',
     description:
-    'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/photography/photo5.jpg'),
     isAvailable: false,
     productImageList: [
-
       require('../database/images/photography/photo5.jpg'),
       require('../database/images/photography/photo6.jpg'),
     ],
   },
+
+   /* ----------------------------------------------- Digital DataGet ------------------------------*/
+
   {
     id: 9,
     category: 'digital',
     productName: 'ArtWork Digitals',
     productPrice: '6,000',
     description:
-    'Printing workshop with printing tool and color for screen printing.',    
+      'Printing workshop with printing tool and color for screen printing.',
     isOff: true,
     productImage: require('../database/images/digital/dig1.jpg'),
     isAvailable: true,
     offPercentage: 30,
     productImageList: [
-      require('../database/images/digital/dig2.jpg'),
-      require('../database/images/digital/dig3.jpg'),
+    
       require('../database/images/digital/dig4.jpg'),
       require('../database/images/digital/dig5.jpg'),
       require('../database/images/digital/dig6.png'),
-
     ],
   },
+
   {
     id: 10,
     category: 'digital',
     productName: 'ArtWork Digital',
     productPrice: '6,000',
     description:
-      'Printing workshop with printing tool and color for screen printing.', 
-      isOff: false,
+      'Printing workshop with printing tool and color for screen printing.',
+    isOff: false,
     productImage: require('../database/images/digital/dig5.jpg'),
     isAvailable: false,
     productImageList: [
+      require('../database/images/digital/dig2.jpg'),
+      require('../database/images/digital/dig3.jpg'),
+      require('../database/images/digital/dig4.jpg'),
       require('../database/images/digital/dig5.jpg'),
       require('../database/images/digital/dig6.png'),
     ],
   },
+  
+   /* ----------------------------------------------- Drawing DataGet ------------------------------*/
+
   {
     id: 11,
     category: 'drawing',
     productName: 'ArtWork Drawing',
     productPrice: '7,000',
     description:
-      'Printing workshop with printing tool and color for screen printing.', 
-      isOff: true,
-    productImage: require('../database/images/drawing/draw2.jpg'),
+      'Printing workshop with printing tool and color for screen printing.',
+    isOff: true,
+    productImage: require('../database/images/drawing/draw4.jpg'),
     isAvailable: true,
     offPercentage: 35,
     productImageList: [
@@ -224,15 +241,16 @@ export const Items = [
       require('../database/images/drawing/draw6.jpg'),
     ],
   },
+
   {
     id: 12,
     category: 'drawing',
     productName: 'ArtWork Drawing',
     productPrice: '7,000',
     description:
-    'Drawing ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.', 
+      'Drawing ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
-    productImage: require('../database/images/drawing/draw4.jpg'),
+    productImage: require('../database/images/drawing/draw2.jpg'),
     isAvailable: false,
     productImageList: [
       require('../database/images/drawing/draw2.jpg'),
@@ -242,16 +260,19 @@ export const Items = [
       require('../database/images/drawing/draw6.jpg'),
     ],
   },
+
+   /* ----------------------------------------------- Paper DataGet ------------------------------*/
+
   {
     id: 13,
     category: 'paper',
     productName: 'ArtWork Work On Paper',
     productPrice: '8,000',
     description:
-    'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+      'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: true,
     offPercentage: 40,
-    productImage: require('../database/images/paper/w1.jpeg'),
+    productImage: require('../database/images/paper/w6.jpg'),
     isAvailable: true,
     productImageList: [
       require('../database/images/paper/w2.jpg'),
@@ -260,14 +281,15 @@ export const Items = [
 
     ],
   },
+
   {
     id: 14,
     category: 'paper',
     productName: 'Work On Paper',
     productPrice: '8000',
     description:
-    'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
-     isOff: false,
+      'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
+    isOff: false,
     productImage: require('../database/images/paper/w5.jpg'),
     isAvailable: false,
     productImageList: [
@@ -280,6 +302,9 @@ export const Items = [
       require('../database/images/paper/w12.jpg'),
     ],
   },
+
+   /* ----------------------------------------------- Printing DataGet ------------------------------*/
+
   {
     id: 15,
     category: 'print',
@@ -297,6 +322,7 @@ export const Items = [
       require('../database/images/print/pr3.jpg'),
     ],
   },
+
   {
     id: 16,
     category: 'print',
