@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 import { COLOURS, Items } from '../database/Database';
-import Entypo from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
@@ -20,8 +20,6 @@ const NavigationButton = ({ text, destination }) => {
     navigation.navigate(destination);
   };
 }
-
-
 
 
 const Home = ({ navigation }) => {
@@ -91,123 +89,7 @@ const Home = ({ navigation }) => {
     setPaper(paperList);
   };
 
-  //create an product reusable card
 
-  // const ProductCard = ({ data }) => {
-  //   return (
-  //     <TouchableOpacity
-  //       onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
-  //       style={{
-  //         width: '48%',
-  //         marginVertical: 14,
-  //       }}>
-  //       <View
-  //         style={{
-  //           width: '100%',
-  //           height: 100,
-  //           borderRadius: 10,
-  //           backgroundColor: COLOURS.backgroundLight,
-  //           position: 'relative',
-  //           justifyContent: 'center',
-  //           alignItems: 'center',
-  //           marginBottom: 8,
-  //         }}>
-  //         {data.isOff ? (
-  //           <View
-  //             style={{
-  //               position: 'absolute',
-  //               width: '15%',
-  //               height: '19%',
-  //               backgroundColor: COLOURS.green,
-  //               top: 0,
-  //               left: 0,
-  //               borderTopLeftRadius: 10,
-  //               borderBottomRightRadius: 10,
-  //               alignItems: 'center',
-  //               justifyContent: 'center',
-  //             }}>
-  //             <Text
-  //               style={{
-  //                 fontSize: 8,
-  //                 color: COLOURS.white,
-  //                 fontWeight: 'bold',
-  //                 letterSpacing: 1,
-  //               }}>
-  //               {data.offPercentage}%
-  //             </Text>
-  //           </View>
-  //         ) : null}
-  //         <Image
-  //           source={data.productImage}
-  //           style={{
-  //             width: '500%',
-  //             height: '70%',
-              
-  //             resizeMode: 'contain',
-  //           }}
-  //         />
-  //       </View>
-  //       <Text
-  //         style={{
-  //           fontSize: 12,
-  //           color: COLOURS.black,
-  //           fontWeight: '600',
-  //           marginBottom: 2,
-  //         }}>
-  //         {data.productName}
-  //       </Text>
-  //       {data.category == 'product' ? (
-  //         data.isAvailable ? (
-  //           <View
-  //             style={{
-  //               flexDirection: 'row',
-  //               alignItems: 'center',
-  //             }}>
-  //             <FontAwesome
-  //               name="circle"
-  //               style={{
-  //                 fontSize: 12,
-  //                 marginRight: 6,
-  //                 color: COLOURS.green,
-  //               }}
-  //             />
-  //             <Text
-  //               style={{
-  //                 fontSize: 12,
-  //                 color: COLOURS.green,
-  //               }}>
-  //               Available
-  //             </Text>
-              
-  //           </View>
-  //         ) : (
-  //           <View
-  //             style={{
-  //               flexDirection: 'row',
-  //               alignItems: 'center',
-  //             }}>
-  //             <FontAwesome
-  //               name="circle"
-  //               style={{
-  //                 fontSize: 12,
-  //                 marginRight: 6,
-  //                 color: COLOURS.red,
-  //               }}
-  //             />
-  //             <Text
-  //               style={{
-  //                 fontSize: 12,
-  //                 color: COLOURS.red,
-  //               }}>
-  //               unavailable
-  //             </Text>
-  //           </View>
-  //         )
-  //       ) : null}
-  //       <Text>₦ {data.productPrice}</Text>
-  //     </TouchableOpacity>
-  //   );
-  // };
   const ProductCard = ({data}) => {
     return (
       <TouchableOpacity
@@ -341,6 +223,19 @@ const Home = ({ navigation }) => {
           <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
             <MaterialCommunityIcons
               name="cart"
+              style={{
+                fontSize: 18,
+                color: COLOURS.backgroundMedium,
+                padding: 12,
+                borderRadius: 10,
+                borderWidth: 1,
+                borderColor: COLOURS.backgroundLight,
+              }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('MyProfile')}>
+            <MaterialCommunityIcons
+              name="Profile"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,

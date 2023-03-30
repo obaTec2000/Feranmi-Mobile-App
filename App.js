@@ -5,6 +5,7 @@ import {View, Text} from "react-native";
 import Artist from './componenets/screens/Artist'
 import MyCart from './componenets/screens/MyCart'
 import ProductInfo from "./componenets/screens/ProductInfo";
+import MyProfile from "./componenets/screens/MyProfile";
 
 
 const App = () => {
@@ -18,6 +19,8 @@ const App = () => {
       <Stack.Screen name="Artist" component={Artist} />
       <Stack.Screen name="MyCart" component={MyCart} />
       <Stack.Screen name="ProductInfo" component={ProductInfo} />
+      <Stack.Screen name="MyProfile" component={MyProfile} />
+
     </Stack.Navigator>
    </NavigationContainer> 
 
