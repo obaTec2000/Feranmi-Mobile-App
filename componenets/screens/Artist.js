@@ -8,10 +8,12 @@ import {
   Image,
 } from 'react-native';
 import { COLOURS, Items } from '../database/Database';
-import Icon from 'react-native-vector-icons/FontAwesome';
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useNavigation } from '@react-navigation/native';
+import { RectButton, CircleButton } from "./Button";
+
 
 const NavigationButton = ({ text, destination }) => {
   const navigation = useNavigation();
@@ -101,13 +103,13 @@ const Home = ({ navigation }) => {
         <View
           style={{
             width: '100%',
-            height: 100,
-            borderRadius: 10,
-            backgroundColor: COLOURS.backgroundLight,
+            height: 120,
+            borderRadius: 5,
+            backgroundColor: COLOURS.green,
             position: 'relative',
             justifyContent: 'center',
             alignItems: 'center',
-            marginBottom: 8,
+            marginBottom: 20,
           }}>
           {data.isOff ? (
             <View
@@ -115,7 +117,7 @@ const Home = ({ navigation }) => {
                 position: 'absolute',
                 width: '11%',
                 height: '15%',
-                backgroundColor: COLOURS.green,
+                backgroundColor: COLOURS.red,
                 top: 0,
                 left: 0,
                 borderTopLeftRadius: 5,
@@ -132,13 +134,14 @@ const Home = ({ navigation }) => {
                 }}>
                 {data.offPercentage}%
               </Text>
+            
             </View>
           ) : null}
           <Image
             source={data.productImage}
             style={{
-              width: '80%',
-              height: '80%',
+              width: '70%',
+              height: '90%',
               resizeMode: 'contain',
             }}
           />
@@ -174,6 +177,7 @@ const Home = ({ navigation }) => {
                 }}>
                 Available
               </Text>
+             
             </View>
           ) : (
             <View
@@ -233,9 +237,9 @@ const Home = ({ navigation }) => {
               }}
             />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('MyProfile')}>
+          <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')}>
             <MaterialCommunityIcons
-              name="Profile"
+              name="account-circle"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,
@@ -243,6 +247,7 @@ const Home = ({ navigation }) => {
                 borderRadius: 10,
                 borderWidth: 1,
                 borderColor: COLOURS.backgroundLight,
+                
               }}
             />
           </TouchableOpacity>
