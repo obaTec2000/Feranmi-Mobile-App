@@ -12,7 +12,7 @@ export const COLOURS = {
 export const Items = [
   {
     id: 1,
-    category: 'product',
+    category: 'painting',
     productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
     productPrice: '2,000',
     description:
@@ -30,7 +30,7 @@ export const Items = [
   },
   {
     id: 2,
-    category: 'product',
+    category: 'painting',
     productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
     productPrice: '2,000',
     description:

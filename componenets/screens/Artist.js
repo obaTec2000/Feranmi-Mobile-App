@@ -11,21 +11,12 @@ import { COLOURS, Items } from '../database/Database';
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { useNavigation } from '@react-navigation/native';
-import { RectButton, CircleButton } from "./Button";
 
 
-const NavigationButton = ({ text, destination }) => {
-  const navigation = useNavigation();
-
-  const handlePress = () => {
-    navigation.navigate(destination);
-  };
-}
 
 
 const Home = ({ navigation }) => {
-  const [products, setProducts] = useState([]);
+  const [painting, setPainting] = useState([]);
   const [sculpture, setSculpture] = useState([]);
   const [textile, setTextile] = useState([]);
   const [digital, setDigital] = useState([]);
@@ -46,7 +37,7 @@ const Home = ({ navigation }) => {
   //get data from DB
 
   const getDataFromDB = () => {
-    let productList = [];
+    let paintingList = [];
     let sculptureList = [];
     let textileList = [];
     let photographyList = [];
@@ -56,8 +47,8 @@ const Home = ({ navigation }) => {
     let paperList = [];
 
     for (let index = 0; index < Items.length; index++) {
-      if (Items[index].category == 'product') {
-        productList.push(Items[index]);
+      if (Items[index].category == 'painting') {
+        paintingList.push(Items[index]);
       } else if (Items[index].category == 'sculpture') {
         sculptureList.push(Items[index]);
       }
@@ -81,7 +72,7 @@ const Home = ({ navigation }) => {
       }
     }
 
-    setProducts(productList);
+    setPainting(paintingList);
     setSculpture(sculptureList);
     setTextile(textileList);
     setDigital(digitalList);
@@ -91,14 +82,13 @@ const Home = ({ navigation }) => {
     setPaper(paperList);
   };
 
-
-  const ProductCard = ({data}) => {
+  const ProductCard = ({ data }) => {
     return (
       <TouchableOpacity
-        onPress={() => navigation.navigate('ProductInfo', {productID: data.id})}
+        onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
         style={{
-          width: '48%',
-          marginVertical: 14,
+          width: '45%',
+          marginVertical: 13,
         }}>
         <View
           style={{
@@ -115,8 +105,8 @@ const Home = ({ navigation }) => {
             <View
               style={{
                 position: 'absolute',
-                width: '11%',
-                height: '15%',
+                width: '15%',
+                height: '19%',
                 backgroundColor: COLOURS.red,
                 top: 0,
                 left: 0,
@@ -134,7 +124,7 @@ const Home = ({ navigation }) => {
                 }}>
                 {data.offPercentage}%
               </Text>
-            
+
             </View>
           ) : null}
           <Image
@@ -155,7 +145,7 @@ const Home = ({ navigation }) => {
           }}>
           {data.productName}
         </Text>
-        {data.category == 'productInfp ' ? (
+        {data.category == 'sculpture' ? (
           data.isAvailable ? (
             <View
               style={{
@@ -177,7 +167,7 @@ const Home = ({ navigation }) => {
                 }}>
                 Available
               </Text>
-             
+
             </View>
           ) : (
             <View
@@ -239,7 +229,7 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')}>
             <MaterialCommunityIcons
-              name="account-circle"
+              name="arrow-right-circle"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,
@@ -247,7 +237,7 @@ const Home = ({ navigation }) => {
                 borderRadius: 10,
                 borderWidth: 1,
                 borderColor: COLOURS.backgroundLight,
-                
+
               }}
             />
           </TouchableOpacity>
@@ -332,7 +322,7 @@ const Home = ({ navigation }) => {
               flexWrap: 'wrap',
               justifyContent: 'space-around',
             }}>
-            {products.map(data => {
+            {painting.map(data => {
               return <ProductCard data={data} key={data.id} />;
             })}
           </View>
@@ -416,7 +406,7 @@ const Home = ({ navigation }) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-               TEXTILE
+                TEXTILE
               </Text>
               <Text
                 style={{
@@ -724,11 +714,21 @@ const Home = ({ navigation }) => {
               return <ProductCard data={data} key={data.id} />;
             })}
           </View>
-        </View>
+          <View>
 
+            <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')}>
+              <Text style={{ color: 'red', textAlign: 'center', marginTop: 10, }}>
+                Go to Artist Page
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+        </View>
       </ScrollView>
-      
+
+
     </View>
+
   );
 };
 

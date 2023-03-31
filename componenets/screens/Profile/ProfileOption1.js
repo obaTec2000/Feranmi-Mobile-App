@@ -1,21 +1,16 @@
-import React from 'react';
-import { View, StatusBar, Image, ScrollView } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, StatusBar, Image, ScrollView, TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
 
-const NavigationButton = ({ text, destination }) => {
-  const navigation = useNavigation();
 
-  const handlePress = () => {
-    navigation.navigate(destination);
-  };
-}
-
-const NavBar = () => {
+const NavBar = ({ navigation }) => {
   return (
     <NavBarView>
+      <TouchableOpacity onPress={() => navigation.navigate('Aryist')}>
       <Image source={require('../../../assets/images/backward_arrow.png')} style={{ width: 16, height: 16 }} />
+    </TouchableOpacity>
       <Text size='20px' bold style={{marginTop: 15}}>ARTIST PAGE</Text>
       <View style={{ width: 16, alignItems: 'center' }}>
         <Image source={require('../../../assets/images/more_icon.png')} style={{ width: 3, height: 16, }} />
