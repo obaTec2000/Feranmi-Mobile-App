@@ -320,7 +320,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -377,7 +377,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -434,7 +434,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -490,7 +490,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -545,7 +545,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -600,7 +600,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -655,7 +655,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll
@@ -710,7 +710,7 @@ const Home = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                color: COLOURS.blue,
+                color: COLOURS.red,
                 fontWeight: '400',
               }}>
               SeeAll

@@ -6,7 +6,6 @@ import Artist from './componenets/screens/Artist'
 import MyCart from './componenets/screens/MyCart'
 import ProductInfo from "./componenets/screens/ProductInfo";
 import { ProfileOption1 } from "./componenets/screens/Profile";
-import { ProfileOption2 } from "./componenets/screens/Profile"
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -20,7 +19,7 @@ const App = () => {
       <Stack.Screen name="MyCart" component={MyCart} />
       <Stack.Screen name="ProductInfo" component={ProductInfo} />
       <Stack.Screen name="ProfileOption1" component={ProfileOption1} />
-      <Stack.Screen name="ProfileOption2" component={ProfileOption2} />
+      
 
     </Stack.Navigator>
    </NavigationContainer> 

@@ -112,7 +112,7 @@ const ProductInfo = ({route, navigation}) => {
         position: 'relative',
       }}>
       <StatusBar
-        backgroundColor={COLOURS.backgroundLight}
+        backgroundColor={COLOURS.green}
         barStyle="dark-content"
       />
       <ScrollView>
@@ -208,7 +208,7 @@ const ProductInfo = ({route, navigation}) => {
               name="shopping-cart"
               style={{
                 fontSize: 18,
-                color: COLOURS.blue,
+                color: COLOURS.green,
                 marginRight: 6,
               }}
             />
@@ -242,8 +242,8 @@ const ProductInfo = ({route, navigation}) => {
               name="link-outline"
               style={{
                 fontSize: 24,
-                color: COLOURS.blue,
-                backgroundColor: COLOURS.blue + 10,
+                color: COLOURS.green,
+                backgroundColor: COLOURS.green + 10,
                 padding: 8,
                 borderRadius: 100,
               }}
@@ -281,7 +281,7 @@ const ProductInfo = ({route, navigation}) => {
               }}>
               <View
                 style={{
-                  color: COLOURS.blue,
+                  color: COLOURS.green,
                   backgroundColor: COLOURS.backgroundLight,
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -293,7 +293,7 @@ const ProductInfo = ({route, navigation}) => {
                   name="location-pin"
                   style={{
                     fontSize: 16,
-                    color: COLOURS.blue,
+                    color: COLOURS.green,
                   }}
                 />
               </View>
@@ -343,7 +343,7 @@ const ProductInfo = ({route, navigation}) => {
           style={{
             width: '86%',
             height: '90%',
-            backgroundColor: COLOURS.blue,
+            backgroundColor: COLOURS.green,
             borderRadius: 20,
             justifyContent: 'center',
             alignItems: 'center',

@@ -104,7 +104,7 @@ const MyCart = ({navigation}) => {
             padding: 14,
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: COLOURS.backgroundLight,
+            backgroundColor: COLOURS.green,
             borderRadius: 10,
             marginRight: 22,
           }}>
@@ -180,7 +180,7 @@ const MyCart = ({navigation}) => {
                   name="minus"
                   style={{
                     fontSize: 16,
-                    color: COLOURS.backgroundDark,
+                    color: COLOURS.green,
                   }}
                 />
               </View>
@@ -198,7 +198,7 @@ const MyCart = ({navigation}) => {
                   name="plus"
                   style={{
                     fontSize: 16,
-                    color: COLOURS.backgroundDark,
+                    color: COLOURS.green,
                   }}
                 />
               </View>
@@ -306,7 +306,7 @@ const MyCart = ({navigation}) => {
                 }}>
                 <View
                   style={{
-                    color: COLOURS.blue,
+                    color: COLOURS.green,
                     backgroundColor: COLOURS.backgroundLight,
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -318,7 +318,7 @@ const MyCart = ({navigation}) => {
                     name="truck-delivery-outline"
                     style={{
                       fontSize: 18,
-                      color: COLOURS.blue,
+                      color: COLOURS.green,
                     }}
                   />
                 </View>
@@ -390,7 +390,7 @@ const MyCart = ({navigation}) => {
                     style={{
                       fontSize: 10,
                       fontWeight: '900',
-                      color: COLOURS.blue,
+                      color: COLOURS.green,
                       letterSpacing: 1,
                     }}>
                     VISA
@@ -536,7 +536,7 @@ const MyCart = ({navigation}) => {
           style={{
             width: '86%',
             height: '90%',
-            backgroundColor: COLOURS.blue,
+            backgroundColor: COLOURS.green,
             borderRadius: 20,
             justifyContent: 'center',
             alignItems: 'center',
