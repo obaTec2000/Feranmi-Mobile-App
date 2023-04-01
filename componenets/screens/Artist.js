@@ -280,8 +280,6 @@ const Home = ({ navigation }) => {
             {'\n'}you'll love
           </Text>
         </View>
-
-
         <View
           style={{
             padding: 16,
