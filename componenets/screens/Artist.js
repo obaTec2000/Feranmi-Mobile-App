@@ -714,7 +714,7 @@ const Home = ({ navigation }) => {
           </View>
           <View>
 
-            <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')} style={{ backgroundColor: '#003040', paddingVertical: 12, borderRadius: 4, marginVertical: 8}} >
+            <TouchableOpacity onPress={() => navigation.navigate('HomeStackNavigation')} style={{ backgroundColor: '#003040', paddingVertical: 12, borderRadius: 4, marginVertical: 8}} >
               <Text style={{ color: '#ffc', textAlign: 'center', marginTop: 0, }}>
                 Go to Artist Page
               </Text>

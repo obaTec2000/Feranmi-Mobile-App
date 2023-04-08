@@ -40,6 +40,7 @@ const App = () => {
       <Stack.Screen name="Artist" component={Artist} />
       <Stack.Screen name="MyCart" component={MyCart} />
       <Stack.Screen name="ProductInfo" component={ProductInfo} />
+      <Stack.Screen name="HomeStackNavigation" component={HomeStackNavigator} />
       <Stack.Screen name="ProfileOption1" component={ProfileOption1} />
       
 
@@ -47,11 +48,11 @@ const App = () => {
    </NavigationContainer> 
 
   );
-  return (
-    <NavigationContainer>
-      <HomeStackNavigator />
-    </NavigationContainer>
-  );
+  // return (
+  //   <NavigationContainer>
+  //     <HomeStackNavigator />
+  //   </NavigationContainer>
+  // );
 }
 
 

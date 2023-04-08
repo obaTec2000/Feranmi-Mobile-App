@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {createStackNavigator} 
     from '@react-navigation/stack';
 import Profile from './screens/Profile';
-import ProfileDetail from './screens/ProfileDetail';
+import ProfileDetail from './screens/ProfileDetails';
 
 const Stack = createStackNavigator();
 const screenOptionStyle = {
