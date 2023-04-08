@@ -5,10 +5,11 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { useNavigation } from '@react-navigation/native';
 
 
-const NavBar = ({ navigation }) => {
+const NavBar = ({  }) => {
+  const navigation = useNavigation()
   return (
     <NavBarView>
-      <TouchableOpacity onPress={() => navigation.navigate('Aryist')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Artist')}>
       <Image source={require('../../../assets/images/backward_arrow.png')} style={{ width: 16, height: 16 }} />
     </TouchableOpacity>
       <Text size='20px' bold style={{marginTop: 15}}>ARTIST PAGE</Text>

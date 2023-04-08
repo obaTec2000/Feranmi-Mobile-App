@@ -229,12 +229,12 @@ const ProductInfo = ({route, navigation}) => {
             }}>
             <Text
               style={{
-                fontSize: 24,
-                fontWeight: '600',
+                fontSize: 20,
+                fontWeight: '500',
                 letterSpacing: 0.5,
                 marginVertical: 4,
                 color: COLOURS.black,
-                maxWidth: '84%',
+                maxWidth: '85%',
               }}>
               {product.productName}
             </Text>

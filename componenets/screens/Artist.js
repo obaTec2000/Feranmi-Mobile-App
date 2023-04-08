@@ -13,8 +13,6 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 
-
-
 const Home = ({ navigation }) => {
   const [painting, setPainting] = useState([]);
   const [sculpture, setSculpture] = useState([]);
@@ -302,7 +300,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -359,7 +357,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -416,7 +414,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+              
               </Text>
             </View>
             <Text
@@ -472,7 +470,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -527,7 +525,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -582,7 +580,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -637,7 +635,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -692,7 +690,7 @@ const Home = ({ navigation }) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                18
+                
               </Text>
             </View>
             <Text
@@ -716,8 +714,8 @@ const Home = ({ navigation }) => {
           </View>
           <View>
 
-            <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')}>
-              <Text style={{ color: 'red', textAlign: 'center', marginTop: 10, }}>
+            <TouchableOpacity onPress={() => navigation.navigate('ProfileOption1')} style={{ backgroundColor: '#003040', paddingVertical: 12, borderRadius: 4, marginVertical: 8}} >
+              <Text style={{ color: '#ffc', textAlign: 'center', marginTop: 0, }}>
                 Go to Artist Page
               </Text>
             </TouchableOpacity>
