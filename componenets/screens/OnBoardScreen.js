@@ -31,8 +31,8 @@ const OnBoardScreen = ({navigation}) => {
       <View style={{paddingHorizontal: 20, paddingTop: 20}}>
         {/* Title container */}
         <View>
-          <Text style={style.title}>Find your</Text>
-          <Text style={style.title}>sweet home</Text>
+          <Text style={style.title}>Surround yourself</Text>
+          <Text>with art you'll love</Text>
         </View>
 
         {/* Text container */}
@@ -54,7 +54,7 @@ const OnBoardScreen = ({navigation}) => {
         {/* button */}
         <Pressable onPress={() => navigation.navigate('Login')}>
           <View style={style.btn}>
-            <Text style={{color: 'white'}}>Get Started</Text>
+            <Text style={{color: 'white'}}>EXPLORE OUR ARTWORK</Text>
           </View>
         </Pressable>
       </View>
