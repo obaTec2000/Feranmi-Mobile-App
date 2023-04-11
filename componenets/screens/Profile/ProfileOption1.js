@@ -55,7 +55,7 @@ const Card = () => {
           <Image source={require('../../../assets/images/person01.png')} style={{ width: 18, height: 18 }} />
           <Text size='14px' bold color='#000000' style={{ marginLeft: 8 }}>1k</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 32 }}>
-            <Image source={require('../../../assets/images/heart.png')} style={{ width: 18, height: 18 }} />
+            <Image source={require('../../../assets/images/like_icon.png')} style={{ width: 18, height: 18 }} />
             <Text size='14px' bold color='#000000' style={{ marginLeft: 8 }}>1k</Text>
           </View>
         </View>

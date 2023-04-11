@@ -20,6 +20,7 @@ export const Items = [
     isOff: true,
     offPercentage: 10,
     productImage: require('../database/images/painting/painting1.png'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
       require('../database/images/painting/painting3.jpg'),
@@ -38,6 +39,7 @@ export const Items = [
     isOff: false,
 
     productImage: require('../database/images/painting/painting8.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
 
@@ -70,6 +72,7 @@ export const Items = [
     isOff: true,
     offPercentage: 18,
     productImage: require('../database/images/sculpture/s2.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
 
     isAvailable: true,
     productImageList: [
@@ -91,6 +94,7 @@ export const Items = [
 
     isOff: false,
     productImage: require('../database/images/sculpture/s6.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
 
@@ -117,6 +121,7 @@ export const Items = [
     isOff: true,
     offPercentage: 20,
     productImage: require('../database/images/textile/textile3.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
       require('../database/images/textile/textile3.jpg'),
@@ -134,6 +139,7 @@ export const Items = [
       'Texttile techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/textile/textile1.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/textile/textile2.jpg'),
@@ -155,6 +161,7 @@ export const Items = [
     isOff: true,
     offPercentage: 25,
     productImage: require('../database/images/photography/photo1.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
 
@@ -175,6 +182,7 @@ export const Items = [
       'Photography techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/photography/photo5.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/photography/photo5.jpg'),
@@ -193,6 +201,7 @@ export const Items = [
       'Printing workshop with printing tool and color for screen printing.',
     isOff: true,
     productImage: require('../database/images/digital/dig1.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     offPercentage: 30,
     productImageList: [
@@ -212,6 +221,7 @@ export const Items = [
       'Printing workshop with printing tool and color for screen printing.',
     isOff: false,
     productImage: require('../database/images/digital/dig5.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/digital/dig2.jpg'),
@@ -233,6 +243,7 @@ export const Items = [
       'Printing workshop with printing tool and color for screen printing.',
     isOff: true,
     productImage: require('../database/images/drawing/draw4.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     offPercentage: 35,
     productImageList: [
@@ -251,6 +262,7 @@ export const Items = [
       'Drawing ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/drawing/draw2.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/drawing/draw2.jpg'),
@@ -273,6 +285,7 @@ export const Items = [
     isOff: true,
     offPercentage: 40,
     productImage: require('../database/images/paper/w6.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     productImageList: [
       require('../database/images/paper/w2.jpg'),
@@ -291,6 +304,7 @@ export const Items = [
       'Paper ArtWork techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
     isOff: false,
     productImage: require('../database/images/paper/w5.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/paper/w6.jpg'),
@@ -314,6 +328,7 @@ export const Items = [
       'Printing workshop with printing tool and color for screen printing.',
     isOff: true,
     productImage: require('../database/images/print/pr5.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: true,
     offPercentage: 45,
     productImageList: [
@@ -332,6 +347,7 @@ export const Items = [
       'Printing workshop with printing tool and color for screen printing.',
     isOff: false,
     productImage: require('../database/images/print/pr7.jpg'),
+    productIcon: require('../database/images/icon/like_icon.png'),
     isAvailable: false,
     productImageList: [
       require('../database/images/print/pr6.jpg'),

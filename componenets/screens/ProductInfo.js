@@ -204,8 +204,13 @@ const ProductInfo = ({route, navigation}) => {
               alignItems: 'center',
               marginVertical: 14,
             }}>
+  
+               <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 32 }}>
+            <Image source={require('../../assets/images/like_icon.png')} style={{ width: 18, height: 18 }} />
+            <Text size='14px' bold color='#000000' style={{ marginLeft: 8 }}>1k</Text>
+          </View>
             <Entypo
-              name="shopping-cart"
+              name=""
               style={{
                 fontSize: 18,
                 color: COLOURS.green,
@@ -218,7 +223,7 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.black,
               }}>
               Acquire This Artwork
-            </Text>
+            </Text> 
           </View>
           <View
             style={{

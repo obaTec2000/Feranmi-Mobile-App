@@ -21,7 +21,7 @@ const Profile = ({navigation}) => {
       }}
     >
       <ImageBackground
-        source={require("./assets/photo.png")}
+        source={require("./assets/pppp.jpg")}
         style={{
           height: 0.45 * h,
         }}
@@ -60,7 +60,7 @@ const Profile = ({navigation}) => {
               fontFamily: "Montserrat_700Bold",
             }}
           >
-            Ida Niska
+           KINGSTECH
           </Text>
         </LinearGradient>
       </ImageBackground>
@@ -219,7 +219,7 @@ const Profile = ({navigation}) => {
                 color: "#FFF",
               }}
             >
-              Ida Niska
+              KINGSTECH
             </Text>
             </TouchableOpacity>
             <Text
@@ -316,7 +316,7 @@ const Profile = ({navigation}) => {
                 color: "#FFF",
               }}
             >
-              Ida Niska
+             KINGSTECH
             </Text>
             <Text
               style={{

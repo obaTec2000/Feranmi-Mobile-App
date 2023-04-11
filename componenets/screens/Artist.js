@@ -6,6 +6,7 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
+  Icon,
 } from 'react-native';
 import { COLOURS, Items } from '../database/Database';
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -85,13 +86,13 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
         onPress={() => navigation.navigate('ProductInfo', { productID: data.id })}
         style={{
-          width: '45%',
-          marginVertical: 13,
+          width: '46%',
+          marginVertical: 20,
         }}>
         <View
           style={{
             width: '100%',
-            height: 120,
+            height: 150,
             borderRadius: 5,
             backgroundColor: COLOURS.backgroundLight,
             position: 'relative',
@@ -103,8 +104,8 @@ const Home = ({ navigation }) => {
             <View
               style={{
                 position: 'absolute',
-                width: '15%',
-                height: '19%',
+                width: '14%',
+                height: '14%',
                 backgroundColor: COLOURS.green,
                 top: 0,
                 left: 0,
@@ -134,6 +135,13 @@ const Home = ({ navigation }) => {
             }}
           />
         </View>
+        {/* <Icon 
+         source={data.productIcon}
+         style={{
+          width: '10%',
+          height: '10%'
+         }}
+         /> */}
         <Text
           style={{
             fontSize: 12,
