@@ -24,6 +24,7 @@ import OnBoardScreen from "./componenets/screens/OnBoardScreen";
 import Login from "./componenets/screens/Login";
 import Signup from "./componenets/screens/Signup";
 import { createStackNavigator } from '@react-navigation/stack';
+import { OnboardingScreen } from "./screens";
 
 const Stack = createStackNavigator();
 
@@ -53,6 +54,7 @@ const App = () => {
         <Stack.Screen name="ProductInfo" component={ProductInfo} />
         <Stack.Screen name="HomeStackNavigation" component={HomeStackNavigator} />
         <Stack.Screen name="ProfileOption1" component={ProfileOption1} />
+        <Stack.Screen name="OnbordingScreen" component={OnboardingScreen} />
 
 
 

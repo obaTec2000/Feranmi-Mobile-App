@@ -47,6 +47,7 @@ const Card = () => {
       <Text size='20px' bold color='#000000'>Rian Hotton</Text>
       <Text size='15px'  color='#000000' >Painter, Draftsman | Jersey</Text>
       <Image source={require('../../../assets/images/painting1.png')} style={{ width: '60%', height: '55%' }} />
+      
       </ProfileView>
       <Footer style={{marginTop: '-65%', alignItems: 'center'}}>
         <View style={{ flexDirection: 'row', alignItems: 'center'}}>
@@ -62,7 +63,10 @@ const Card = () => {
         <Text size='14px' bold color='#000000'>SHARE</Text>
       </Footer>
     </CardView>
+
+    
   )
+  
 }
 
 const ProfileOption1 = ({
@@ -78,8 +82,8 @@ const ProfileOption1 = ({
         <Text size='15px'>Contemporary Artists</Text>
         <Text size='12px' style={{ marginTop: 20, margin: 10 }}>
         One of the key themes in Rian Hotton's art is his choice of palette, with which he happily takes risks. 
-        While he paints, Hotton listens to audiobooks on a wide range of topics, which influences the subjects of his pieces, 
-        almost as if they are a visual diary. He describes his painting style as 'boldly unorthodox', using both oils and acrylics.
+        {/* While he paints, Hotton listens to audiobooks on a wide range of topics, which influences the subjects of his pieces, 
+        almost as if they are a visual diary. He describes his painting style as 'boldly unorthodox', using both oils and acrylics. */}
         </Text>
         <StatsBox>
           <Stats count='140' item='SHOTS' />

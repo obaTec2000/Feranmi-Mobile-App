@@ -13,7 +13,7 @@ export const Items = [
   {
     id: 1,
     category: 'painting',
-    productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
+    productName: 'Artwork Painting',
     productPrice: '2,000',
     description:
       'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',
@@ -32,7 +32,7 @@ export const Items = [
   {
     id: 2,
     category: 'painting',
-    productName: 'Fabric Painting Designs Ideas in Fashion Design - Hamstech',
+    productName: 'Artwork Painting',
     productPrice: '2,000',
     description:
       'Painting techniques make stunning creativeness which is made by the depth of hue and shades or the creativity of the textures formed.',

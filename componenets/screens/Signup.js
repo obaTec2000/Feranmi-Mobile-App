@@ -163,7 +163,7 @@ function Signup() {
       <View style={styles.boxStyle}>
       <Box 
         onPress={() => navigation.navigate("#")}  // for navigation
-        style={{height:80, width:80}} 
+        style={{height:40, width:40}} 
         shadow={3}
         _light={{
           backgroundColor: "gray.50",
@@ -316,9 +316,9 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   imageStyle:{
-    width:80,
-    height:80,
-    marginLeft:20,
+    width:40,
+    height:40,
+    marginLeft:10,
   },
   boxStyle:{
     flexDirection:'row',

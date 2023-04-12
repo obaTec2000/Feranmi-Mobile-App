@@ -9,6 +9,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from "react-native";
+import { left } from "styled-system";
 
 const w = Dimensions.get("window").width;
 const h = Dimensions.get("window").height;
@@ -97,8 +98,89 @@ const ProfileDetail = ({navigation}) => {
             fontFamily: "Montserrat_400Regular",
           }}
         >
-          269 shots
+          20 shots
         </Text>
+        <Text
+                style={{
+                  fontSize: 18,
+                  // color: COLOURS.black,
+                  fontWeight: '500',
+                  letterSpacing: 1,
+                  textAlign: 'left',
+                  marginTop: 10,
+                }}>
+                PAINTING
+              </Text>
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop:20
+          }}
+        >
+          <Image
+            source={require("./assets/photo3.png")}
+            style={{
+              borderTopLeftRadius: 40,
+              marginRight: 16,
+              borderBottomLeftRadius: 40,
+            }}
+          />
+          <View>
+            <Image
+              source={require("./assets/photo5.png")}
+              style={{ borderTopRightRadius: 40 }}
+            />
+            <Image
+              source={require("./assets/photo6.png")}
+              style={{ marginTop: 16, borderBottomRightRadius: 40 }}
+            />
+          </View>
+        </View>
+        <Text
+                style={{
+                  fontSize: 18,
+                  // color: COLOURS.black,
+                  fontWeight: '500',
+                  letterSpacing: 1,
+                  marginTop: 10,
+                }}>
+                SCULPTURE
+              </Text>
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop:20
+          }}
+        >
+          <Image
+            source={require("./assets/photo3.png")}
+            style={{
+              borderTopLeftRadius: 40,
+              marginRight: 16,
+              borderBottomLeftRadius: 40,
+            }}
+          />
+          <View>
+            <Image
+              source={require("./assets/photo5.png")}
+              style={{ borderTopRightRadius: 40 }}
+            />
+            <Image
+              source={require("./assets/photo6.png")}
+              style={{ marginTop: 16, borderBottomRightRadius: 40 }}
+            />
+          </View>
+        </View>
+        <Text
+                style={{
+                  fontSize: 18,
+                  // color: COLOURS.black,
+                  fontWeight: '500',
+                  letterSpacing: 1,
+                  marginTop: 10,
+                }}>
+               TEXTILE
+              </Text>
         <View
           style={{
             flexDirection: "row",

@@ -11,6 +11,7 @@ import {
   Animated,
   ToastAndroid,
 } from 'react-native';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {COLOURS, Items} from '../database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -204,12 +205,38 @@ const ProductInfo = ({route, navigation}) => {
               alignItems: 'center',
               marginVertical: 14,
             }}>
-  
-               <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 32 }}>
-            <Image source={require('../../assets/images/like_icon.png')} style={{ width: 18, height: 18 }} />
-            <Text size='14px' bold color='#000000' style={{ marginLeft: 8 }}>1k</Text>
-          </View>
-            <Entypo
+  <View style={{flexDirection: 'row'}}>
+       <TouchableOpacity onPress={() => navigation.navigate("")}>
+          <MaterialCommunityIcons
+            name="heart"
+            style={{
+              fontSize: 18,
+              color: COLOURS.backgroundMedium,
+              padding: 12,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: COLOURS.backgroundLight,
+            }}
+          />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate("")}>
+          <MaterialCommunityIcons
+            name="share"
+            style={{
+              marginLeft: 50,
+              fontSize: 18,
+              color: COLOURS.backgroundMedium,
+              padding: 12,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: COLOURS.backgroundLight,
+            }}
+          />
+        </TouchableOpacity>
+       </View>
+          
+            {/* <Entypo
               name=""
               style={{
                 fontSize: 18,
@@ -223,7 +250,7 @@ const ProductInfo = ({route, navigation}) => {
                 color: COLOURS.black,
               }}>
               Acquire This Artwork
-            </Text> 
+            </Text>  */}
           </View>
           <View
             style={{

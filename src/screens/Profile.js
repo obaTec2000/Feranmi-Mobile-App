@@ -21,12 +21,12 @@ const Profile = ({navigation}) => {
       }}
     >
       <ImageBackground
-        source={require("./assets/pppp.jpg")}
+        source={require("./assets/photo.png")}
         style={{
           height: 0.45 * h,
         }}
       >
-        <View
+        <View 
           style={{
             flexDirection: "row",
             justifyContent: "space-between",
@@ -35,7 +35,7 @@ const Profile = ({navigation}) => {
             alignItems: "center",
           }}
         >
-          <Image source={require("./assets/icons-back-light.png")} />
+          <Image source={require("./assets/icons-back-light.png")}  />
           <Image source={require("./assets/filter.png")} />
         </View>
         <LinearGradient
@@ -309,7 +309,7 @@ const Profile = ({navigation}) => {
               paddingRight: 20,
             }}
           >
-            <Text
+            {/* <Text
               style={{
                 fontSize: 18,
                 fontFamily: "Montserrat_700Bold",
@@ -317,7 +317,125 @@ const Profile = ({navigation}) => {
               }}
             >
              KINGSTECH
+            </Text> */}
+             <TouchableOpacity onPress={()=>navigation.navigate('ProfileDetail')}>
+            <Text
+              style={{
+                fontSize: 18,
+                fontFamily: "Montserrat_700Bold",
+                color: "#FFF",
+              }}
+            >
+              KINGSTECH
             </Text>
+            </TouchableOpacity>
+            <Text
+              style={{
+                fontSize: 16,
+                fontFamily: "Montserrat_400Regular",
+                color: "#918998",
+              }}
+            >
+              1 hour ago
+            </Text>
+          </View>
+          <Image
+            source={require("./assets/icons-chevron-light.png")}
+            style={{ marginHorizontal: 50 }}
+          />
+        </View>
+        <Text
+          style={{
+            fontSize: 17,
+            fontFamily: "Montserrat_400Regular",
+            color: "#918998",
+            marginVertical: 20,
+            paddingHorizontal: 30,
+            textAlign: "center",
+          }}
+        >
+          Believe in yourself, take on your challenges, dig deep within yourself
+          to conquer fears. Never let anyone bring you down. You got to keep
+          going.
+        </Text>
+        <View
+          style={{
+            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "center",
+            marginVertical: 5,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              fontFamily: "Montserrat_400Regular",
+              color: "#fff",
+              paddingHorizontal: 10,
+            }}
+          >
+            256
+          </Text>
+          <Image source={require("./assets/icons-comment-dark.png")} />
+
+          <Text
+            style={{
+              fontSize: 16,
+              fontFamily: "Montserrat_400Regular",
+              color: "#fff",
+              paddingLeft: 30,
+              paddingRight: 10,
+            }}
+          >
+            516
+          </Text>
+          <Image source={require("./assets/icons-like-dark.png")} />
+        </View>
+      </View>
+      <View
+        style={{
+          backgroundColor: "#352641",
+          borderRadius: 40,
+          marginHorizontal: 10,
+          paddingVertical: 20,
+          marginTop: 20,
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            alignSelf: "flex-end",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Image source={require("./assets/avatar.png")} />
+          <View
+            style={{
+              paddingLeft: 20,
+              paddingRight: 20,
+            }}
+          >
+            {/* <Text
+              style={{
+                fontSize: 18,
+                fontFamily: "Montserrat_700Bold",
+                color: "#FFF",
+              }}
+            >
+             KINGSTECH
+            </Text> */}
+             <TouchableOpacity onPress={()=>navigation.navigate('ProfileDetail')}>
+            <Text
+              style={{
+                fontSize: 18,
+                fontFamily: "Montserrat_700Bold",
+                color: "#FFF",
+              }}
+            >
+              KINGSTECH
+            </Text>
+            </TouchableOpacity>
             <Text
               style={{
                 fontSize: 16,

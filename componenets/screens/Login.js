@@ -101,7 +101,7 @@ function Login() {
       <View style={styles.boxStyle}>
       <Box 
         onPress={() => navigation.navigate("#")}  // for navigation 
-        style={{height:80, width:80}} 
+        style={{height:40, width:40}} 
         shadow={3}
         _light={{
           backgroundColor: "gray.50",
@@ -121,7 +121,7 @@ function Login() {
         </AspectRatio>
       </Box>
       <Box 
-        onPress={() => navigation.navigate("#")}  // for navigation
+        onPress={() => navigation.navigate("")}  // for navigation
         style={styles.imageStyle}
         shadow={3}
         _light={{
@@ -254,9 +254,9 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   imageStyle:{
-    width:80,
-    height:80,
-    marginLeft:20,
+    width:40,
+    height:40,
+    marginLeft:5,
   },
   boxStyle:{
     flexDirection:'row',
